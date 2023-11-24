@@ -1,9 +1,41 @@
+$mainColor: navy;
+
 body {
 	background-color: #888;
 	padding: 0 1rem;
 	font-family: sans-serif;
 
 	h1 {
-		color: darkgreen;
+		color: $mainColor;
 	}
+
+	p {
+		color: $mainColor;
+	}
+}
+
+@mixin button-style($base-color) {
+  background-color: $base-color;
+  border: 1px solid darken($base-color, 10%);
+  color: white;
+  border-radius: .5rem;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($base-color, 10%);
+    color: black;
+  }
+}
+
+.btn-primary {
+  @include button-style(#3498db); 
+}
+
+.btn-warning {
+  @include button-style(orange);
+}
+
+.btn-danger {
+  @include button-style(red);
 }
