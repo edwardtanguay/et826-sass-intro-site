@@ -1,18 +1,7 @@
-$mainColor: navy;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-	background-color: #888;
-	padding: 0 1rem;
-	font-family: sans-serif;
-
-	h1 {
-		color: $mainColor;
-	}
-
-	p {
-		color: $mainColor;
-	}
-}
 
 @mixin button-style($base-color) {
   background-color: $base-color;
