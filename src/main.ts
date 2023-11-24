@@ -1,4 +1,5 @@
 import { Balls } from './components/Balls';
+import { ExampleButtonToggle } from './components/ExampleButtonToggle';
 import { Header } from './components/Header';
 import './style.scss'
 
@@ -18,4 +19,7 @@ ${Balls(['purple', 'orange'])}
 ${Balls(['blue', 'red', 'green'])}
 </div>
 
+<hr class="mt-4 mb-4"/>
+
+${ExampleButtonToggle()}
 `;
